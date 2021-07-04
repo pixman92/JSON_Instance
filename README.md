@@ -27,3 +27,8 @@ Parses the JSON string
 ```
 myJSON.parseMe()
 ```
+
+
+
+The CDN script src
+https://cdn.jsdelivr.net/gh/pixman92/JSON_Instance@0.0.2/JSON_Instance.js
