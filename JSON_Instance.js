@@ -41,12 +41,3 @@ class JSON_Instance{
   }
 
 }
-
-var myJSON;
-function state(level){
- if (level == 1){
-   myJSON = new JSON_Instance();
-   myJSON.addToObj([['name', 'tim'], ['age', '60']]);
-   myJSON.addToObj([['name', 'leo'], ['age', '40']]);
- }
-}
