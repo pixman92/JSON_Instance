@@ -8,11 +8,15 @@ class JSON_Instance{
     innerArray:[]
   };
 
-  addToObj(name, age){
-    this.JSONobj.innerArray.push({
-      "name": name,
-      "age" : age,
-    });
+  addToObj(passedArray){    
+    try{
+      var tmpObj = Object.fromEntries(passedArray);
+      this.JSONobj.innerArray.push(tmpObj);
+
+    }
+    catch(error){
+      console.error("Parameter must be a 2D Array")
+    }
   }
   print(){
     console.log(this.JSONobj);
