@@ -11,6 +11,7 @@ var myJSON = new JSON_Instance()
 Adding 2d Array to the JSON
 ```
 myJSON.addToObj(<2dArray>)
+//eg [['name', 'sam'], ['age', '22'], ['job', 'student']]
 ```
 
 To print to console
