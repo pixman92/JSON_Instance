@@ -1,0 +1,1 @@
+https://cdn.jsdelivr.net/gh/pixman92/JSON_Instance@0.0.1/JSON_Instance.js
