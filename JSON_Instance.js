@@ -7,8 +7,13 @@ class JSON_Instance{
   JSONobj = {
     innerArray:[]
   };
+  
+  insertJSON(str){
+    this.JSONobj = str;
+    console.log(this.JSONobj)
+  }
 
-  addToObj(passedArray){    
+  addToObj(passedArray){
     try{
       var tmpObj = Object.fromEntries(passedArray);
       this.JSONobj.innerArray.push(tmpObj);
@@ -18,6 +23,11 @@ class JSON_Instance{
       console.error("Parameter must be a 2D Array")
     }
   }
+  
+  removeByIndex(indexToRemove){
+    this.JSONobj.innerArray.splice(indexToRemove, 1);
+  }
+  
   print(){
     console.log(this.JSONobj);
   }
@@ -30,4 +40,13 @@ class JSON_Instance{
     return JSON.parse(this.JSONobj);
   }
 
+}
+
+var myJSON;
+function state(level){
+ if (level == 1){
+   myJSON = new JSON_Instance();
+   myJSON.addToObj([['name', 'tim'], ['age', '60']]);
+   myJSON.addToObj([['name', 'leo'], ['age', '40']]);
+ }
 }
