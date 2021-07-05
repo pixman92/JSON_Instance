@@ -13,7 +13,7 @@ class JSON_Instance{
     console.log(this.JSONobj)
   }
 
-  addToObj(passedArray){
+  addToObj(passedArray){    
     try{
       var tmpObj = Object.fromEntries(passedArray);
       this.JSONobj.innerArray.push(tmpObj);
@@ -28,7 +28,24 @@ class JSON_Instance{
     this.JSONobj.innerArray.splice(indexToRemove, 1);
   }
   
+  saveToLocalStorage(name){
+    localStorage.setItem(name, myJSON.stringMe());
+  }
+  
+  pulled = "";
+  getFromLocalStorage(name, insertToJSON){
+    if(insertToJSON==true){
+      this.pulled = localStorage.getItem(name);
+      this.JSONobj = this.pulled;
+    }else{
+      this.pulled = localStorage.getItem(name);  
+    }
+    
+    return this.pulled;
+  }
+  
   print(){
+    return this.JSONobj;
     console.log(this.JSONobj);
   }
 
@@ -37,7 +54,10 @@ class JSON_Instance{
   }
 
   parseMe(){
-    return JSON.parse(this.JSONobj);
+    this.JSONobj = JSON.parse(this.JSONobj);
+    console.log("Parsed!");
+    console.log(this.JSONobj);
   }
 
 }
+
