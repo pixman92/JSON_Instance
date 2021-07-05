@@ -37,6 +37,7 @@ class JSON_Instance{
     if(insertToJSON==true){
       this.pulled = localStorage.getItem(name);
       this.JSONobj = this.pulled;
+      this.parseMe();
     }else{
       this.pulled = localStorage.getItem(name);  
     }
