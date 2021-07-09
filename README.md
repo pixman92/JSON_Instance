@@ -20,7 +20,7 @@ myJSON.addToObj(<2dArray>)
 
 Remove an Item in innerArray by index
 ```
-removeByIndex(indexToRemember)
+myJSON.removeByIndex(indexToRemember)
 ```
 
 Saving to LocalStorage
