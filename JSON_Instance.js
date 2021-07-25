@@ -46,8 +46,9 @@ class JSON_Instance{
   }
   
   print(){
-    return this.JSONobj;
     console.log(this.JSONobj);
+    return this.JSONobj;
+
   }
 
   stringMe(){
