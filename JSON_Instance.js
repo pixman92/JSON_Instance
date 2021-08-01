@@ -29,7 +29,7 @@ class JSON_Instance{
   }
   
   saveToLocalStorage(name){
-    localStorage.setItem(name, this.JSONobj.stringMe());
+    localStorage.setItem(name, this.stringMe());
   }
   
   pulled = "";
