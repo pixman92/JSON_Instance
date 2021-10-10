@@ -24,6 +24,36 @@ class JSON_Instance{
     }
   }
   
+  addMoreToIndex(index, data){
+      if(myJSON.JSONobj.innerArray[index]){
+        if(Array.isArray(data)){
+            console.log('it\'s just an Array');
+            try{
+                var tmpObj = Object.fromEntries(data);
+                // this.JSONobj.innerArray.push(tmpObj);
+                myJSON.JSONobj.innerArray[index] = {...myJSON.JSONobj.innerArray[index], ...tmpObj};
+                console.log('Combined! ', myJSON.JSONobj.innerArray[index] );
+              }
+              catch(error){
+                console.error("Parameter must be a 2D Array");
+              }
+            // debugger;
+            
+        }else{
+            if(typeof data === 'object') {
+                console.log('it\'s an object' );
+                myJSON.JSONobj.innerArray[index];         
+
+                myJSON.JSONobj.innerArray[index] = {...myJSON.JSONobj.innerArray[index], ...data};
+                
+                console.log('Combined! ', myJSON.JSONobj.innerArray[index] );
+            }
+        }
+    }else{
+        console.log('no Object with specified Index was found', );
+    } 
+  }
+  
   removeByIndex(indexToRemove){
     this.JSONobj.innerArray.splice(indexToRemove, 1);
   }
