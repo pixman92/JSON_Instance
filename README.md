@@ -17,6 +17,10 @@ Adding 2d Array to the JSON
 myJSON.addToObj(<2dArray>)
 //eg [['name', 'sam'], ['age', '22'], ['job', 'student']]
 ```
+To add new data to an existing JSON_Instance
+```
+addMoreToIndex(index, data){
+```
 
 Remove an Item in innerArray by index
 ```
