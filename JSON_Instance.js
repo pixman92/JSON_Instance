@@ -54,8 +54,8 @@ class JSON_Instance{
     } 
   }
   
-  removeByIndex(indexToRemove){
-    this.JSONobj.innerArray.splice(indexToRemove, 1);
+  removeByIndex(indexOfJSONString, objKey){
+    delete this.JSONobj.innerArray.[indexOfJSONString][objKey]
   }
   
   saveToLocalStorage(name){
