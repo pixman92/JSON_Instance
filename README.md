@@ -24,7 +24,7 @@ addMoreToIndex(index, data){
 
 Remove an Item in innerArray by index
 ```
-myJSON.removeByIndex(indexToRemember)
+myJSON.removeByIndex(indexOfJSONString, objKey){
 ```
 
 Saving to LocalStorage
@@ -36,8 +36,6 @@ Get the LocalStorage, persistant data
 ```
 myJSON.getFromLocalStorage(name, insertToJSON) //name - of the string to save, & boolean if function should add 
 ```
-
-
 
 To print to console
 ```
