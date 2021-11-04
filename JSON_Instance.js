@@ -55,7 +55,11 @@ class JSON_Instance{
   }
   
   removeByIndex(indexOfJSONString, objKey){
-    delete this.JSONobj.innerArray[indexOfJSONString][objKey]
+    if(this.JSONobj.innerArray[indexOfJSONString][objKey] == undefined){
+      console.error('ObjKey may need to be a string!');
+    }else{
+      delete this.JSONobj.innerArray[indexOfJSONString][objKey];
+    }
   }
   
   saveToLocalStorage(name){
