@@ -93,6 +93,7 @@ class JSON_Instance{
     this.JSONobj = JSON.parse(this.JSONobj);
     console.log("Parsed!");
     console.log(this.JSONobj);
+    return this.JSONobj;
   }
 
 }
