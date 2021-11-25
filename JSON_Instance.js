@@ -24,6 +24,23 @@ class JSON_Instance{
     }
   }
   
+  replaceByIndex(index, newData){
+    try{
+      var tmpObj = Object.fromEntries(newData);
+      this.JSONobj.innerArray[index] = tmpObj;
+
+    }
+    catch(error){
+      console.error("Parameter must be a 2D Array")
+    }
+  }
+ 
+  deleteByIndex(index){
+    this.JSONobj.innerArray.splice(index, 1);
+    
+  }
+  
+  
   addMoreToIndex(index, data){
       if(this.JSONobj.innerArray[index]){
         if(Array.isArray(data)){
