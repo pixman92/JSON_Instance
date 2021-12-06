@@ -52,8 +52,7 @@ Parses the JSON string
 myJSON.parseMe()
 ```
 
-=================
-Some use cases
+=================Some use cases=================
 
 - Pulling JSON string and save it to JSON_Instance variable:
 ```
@@ -64,6 +63,16 @@ myJSON.insertJSON(myJSON.getFromLocalStorage('myJSON'));
 //then straighten out the JSON string back to obj(s)
 mJSON.parseMe();
 ```
+
+- Saving Data => to reference using Array Indexes
+```
+myJSON.replaceByIndex(<insert index>, <insert X>)
+X = [[0, [data]]];
+
+refernce?? = myJSON.JSONobj.innerArray[<index used above>][0][0]  = the <index of JSON obj> and [0][0] is the first Part
+myJSON.JSONobj.innerArray[<index used above>][0][1] = the second part
+```
+
 
 
 The CDN script src
