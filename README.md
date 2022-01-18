@@ -19,8 +19,9 @@ myJSON.addToObj(<2dArray>)
 ```
 To add new data to an existing JSON_Instance
 ```
-addMoreToIndex(index, data){
+addMoreToIndex(index, data){    //this function will not create an index, if one doesn not already exist. But it will overwrite an existing
 ```
+
 
 Remove an Item in innerArray by index
 ```
