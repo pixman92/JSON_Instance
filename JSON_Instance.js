@@ -42,7 +42,7 @@ class JSON_Instance{
   
   
   addMoreToIndex(index, data){
-      if(this.JSONobj.innerArray[index]){
+//       if(this.JSONobj.innerArray[index]){
         if(Array.isArray(data)){
             console.log('it\'s just an Array');
             try{
@@ -66,9 +66,9 @@ class JSON_Instance{
                 console.log('Combined! ', this.JSONobj.innerArray[index] );
             }
         }
-    }else{
-        console.log('no Object with specified Index was found', );
-    } 
+//     }else{
+//         console.log('no Object with specified Index was found', );
+//     } 
   }
   
   removeByIndex(indexOfJSONString, objKey){
