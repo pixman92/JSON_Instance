@@ -74,6 +74,10 @@ refernce?? = myJSON.JSONobj.innerArray[<index used above>][0][0]  = the <index o
 myJSON.JSONobj.innerArray[<index used above>][0][1] = the second part
 ```
 
+Saving Data to a 0th index: Saving data as array, instead of called by object names
+```
+myJSON.addToObj([[[0], [['data1', data1], ['data2', data2]]...]])
+```
 
 
 The CDN script src
