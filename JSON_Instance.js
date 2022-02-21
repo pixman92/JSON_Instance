@@ -5,8 +5,10 @@ class JSON_Instance{
   // }
   
   JSONobj = {
-    innerArray=[];
+    innerArray:[]
   };
+  
+  this.JSONobj{innerArray} = [];
   
   insertJSON(str){
     this.JSONobj = str;
