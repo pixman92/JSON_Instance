@@ -5,7 +5,7 @@ class JSON_Instance{
   // }
   
   JSONobj = {
-    innerArray:[]
+    innerArray=[];
   };
   
   insertJSON(str){
