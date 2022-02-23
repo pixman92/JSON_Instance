@@ -4,11 +4,14 @@ class JSON_Instance{
   //   this.age = age;
   // }
   
-  JSONobj = {
-    innerArray:[]
-  };
-  
-  this.JSONobj{innerArray} = [];
+  constructor(){
+    this.JSONobj = {
+      innerArray:[]
+    };
+    
+    this.JSONobj.innerArray = [];
+  }
+
   
   insertJSON(str){
     this.JSONobj = str;
