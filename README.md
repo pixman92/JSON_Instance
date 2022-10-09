@@ -83,5 +83,8 @@ myJSON.addToObj([[[0], [['data1', data1], ['data2', data2]]...]])
 The CDN script src
 https://cdn.jsdelivr.net/gh/pixman92/JSON_Instance@0.1.0/JSON_Instance.js
 
+```
+<script src="https://raw.githack.com/pixman92/JSON_Instance/main/JSON_Instance.js"></script>
+```
 
 
